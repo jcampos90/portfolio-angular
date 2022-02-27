@@ -14,23 +14,44 @@
       </ul>
       <p class="rk-footer__text rk-footer__copy">
         <span class="ae-u-bold">© </span
-        ><span class="ae-u-bolder">{{ year }} Juan Campos Portfolio</span>All
-        Right Reserved.
+        ><span class="ae-u-bolder"
+          >{{ year }} {{ infoPageService.info.title }} Portfolio</span
+        >All Right Reserved.
       </p>
     </div>
     <div class="ae-grid__item item-lg-4 au-xs-ta-center">
-      <a href="#0" class="rk-social-btn">
+      <a
+        [href]="infoPageService.info.facebook"
+        target="_blank"
+        class="rk-social-btn"
+      >
         <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-facebook"></use></svg></a
-      ><a href="#0" class="rk-social-btn">
+          <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+        </svg>
+      </a>
+      <a
+        [href]="infoPageService.info.twitter"
+        target="_blank"
+        class="rk-social-btn"
+      >
         <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-twitter"></use></svg></a
-      ><a href="#0" class="rk-social-btn">
+          <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+        </svg>
+      </a>
+      <a
+        [href]="infoPageService.info.instagram"
+        target="_blank"
+        class="rk-social-btn"
+      >
         <svg>
-          <use
-            xlink:href="assets/img/symbols.svg#icon-pinterest"
-          ></use></svg></a
-      ><a href="#0" class="rk-social-btn">
+          <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+        </svg>
+      </a>
+      <a
+        [href]="infoPageService.info.tumblr"
+        target="_blank"
+        class="rk-social-btn"
+      >
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
         </svg>
@@ -40,8 +61,10 @@
       <p class="rk-footer__text rk-footer__contact">
         <span class="ae-u-bold">Email: </span
         ><span class="ae-u-bolder">
-          <a href="#0" class="rk-dark-color"
-            >contact@urkuportfolio.com
+          <a
+            href="mailTo:{{ infoPageService.info.email }}"
+            class="rk-dark-color"
+            >{{ infoPageService.info.email }}
           </a></span
         >
       </p>
