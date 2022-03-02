@@ -50,7 +50,7 @@
   >
     <a
       *ngFor="let product of productsService.products"
-      routerLink="/item"
+      [routerLink]="['/item', product.cod]"
       class="animated fadeIn rk-item ae-masonry__item"
     >
       <img src="assets/productos/{{ product.url }}.jpg" alt="" />
